@@ -110,22 +110,29 @@
         max-width: 250px !important;
         max-height: 250px !important;
       }
-      /* ClustrMaps 样式优化 */
-      .clustrmaps-container {
+      /* ClustrMaps 样式优化 - 侧边栏版本 */
+      .sidebar .clustrmaps-container {
         text-align: center;
-        margin: 30px auto 20px;
-        padding: 20px;
-        max-width: 800px;
+        margin-top: 30px;
+        padding: 15px 10px;
       }
-      .clustrmaps-container h6 {
+      .sidebar .clustrmaps-container h6 {
         color: #333;
-        margin-bottom: 15px;
-        font-size: 16px;
-        font-weight: 150;
+        margin-bottom: 10px;
+        font-size: 13px;
+        font-weight: 400;
       }
-      .clustrmaps-container a img {
+      .sidebar .clustrmaps-container a img {
         max-width: 100%;
         height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 5px;
+      }
+      /* 确保主要内容不被遮挡 */
+      .page__footer {
+        margin-top: 60px;
+        clear: both;
       }
     </style>
 </head>
@@ -185,6 +192,14 @@
               <li><a href="https://github.com/renyuanming" target="_blank"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
             </ul>
           </div>
+          
+          <!-- Visitor Map in Sidebar -->
+          <div class="clustrmaps-container">
+            <h6>🌍 Visitor Map</h6>
+            <a href="https://clustrmaps.com/site/1c5j1" title="Visit tracker">
+              <img src="//www.clustrmaps.com/map_v2.png?d=5_ivI37JSFh6LNlkQib1UQmelDUS9jP3kN8ukLDD5v0&cl=ffffff" alt="Visitor Map" />
+            </a>
+          </div>
         </div>
       </div>
       
@@ -192,13 +207,17 @@
         <div class="page__inner-wrap">
           <section class="page__content" itemprop="text" >
             <p></p>
-            <p>I'm Yuanming, a third-year Ph.D. candidate at the <a href="https://www.cse.cuhk.edu.hk/" target="_blank">The Chinese University of Hong Kong</a>, 
+            <p>
+              I am Yuanming Ren, a third-year Ph.D. candidate at <a href="https://www.cse.cuhk.edu.hk/" target="_blank">The Chinese University of Hong Kong</a>, 
               supervised by <a href="https://www.cse.cuhk.edu.hk/~pclee/www/index.html" target="_blank">Prof. Patrick P.C. Lee</a>. 
-              Previously, I obtained my master's degree from Tianjin University and bachelor's degree from Zhengzhou University.
-              <!-- My recent research interests focus on <strong>World Model</strong>.  -->
-              My research interests include <strong>Storage Systems</strong>, <strong>Distributed Systems</strong>, and <strong>ML Systems</strong>.
+              I obtained my M.S. degree from <a href="https://cic.tju.edu.cn/" target="_blank">Tianjin University</a> and B.S. degree from <a href="https://www.zzu.edu.cn/" target="_blank">Zhengzhou University</a>, 
+              where my research interests focused on cloud-native technologies (e.g., Kubernetes).
+              </br>
+              My current research at CUHK centers on vector search systems (e.g., DiskANN) and distributed storage systems (e.g., Cassandra). 
+              I am also actively exploring machine learning systems (e.g., vLLM). 
+              I welcome collaboration opportunities with researchers from diverse backgrounds to tackle exciting challenges in these areas. 
+              Please feel free to reach out via <a href="mailto:renyuanming1@gmail.com">renyuanming1@gmail.com</a>.
             </p>
-
 
             <!-- <h5 id="News">News</h5>
             <div class="news-container">
@@ -309,18 +328,12 @@
           </section>
         </div>
       </article>
-          </div>
+    </div>
 
     <div class="page__footer">
       <footer>
-        <div class="clustrmaps-container">
-          <h6>🌍 Visitor Map</h6>
-          <a href="https://clustrmaps.com/site/1c5j1" title="Visit tracker">
-            <img src="//www.clustrmaps.com/map_v2.png?d=5_ivI37JSFh6LNlkQib1UQmelDUS9jP3kN8ukLDD5v0&cl=ffffff" style="max-width: 150px; width: 100%; height: auto;" />
-          </a>
-        </div>
-        <div class="page__footer-copyright">&copy; 2025 Yuanming Ren. Last updated: Jan. 4, 2025</div>
-        <div class="page__footer-copyright">Thanks for the templates from <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a></div>
+        <div class="page__footer-copyright" style="margin-bottom: 10px;">&copy; 2026 Yuanming Ren. Last updated: Jan. 5, 2026</div>
+        <div class="page__footer-copyright" style="margin-bottom: 20px;">Thanks for the templates from <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a></div>
       </footer>
     </div>
 
